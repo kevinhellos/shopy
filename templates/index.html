@@ -8,22 +8,20 @@
 </head>
 <body>
 
-    <div class="">
-        <form class="w-full max-w-sm p-10 bg-white rounded-xl mx-auto mt-32 shadow-lg border" method="post" action="/">
-            <h5 class="text-2xl font-bold">Shopy</h5>
-            <label for="long_url" class="block mb-2 text-sm font-medium dark:text-white mt-5">Long URL</label>
-            <input 
-                type="text" 
-                name="long_url" class="border border-gray-300 text-sm rounded-lg block w-full px-5 p-3 placeholder:text-gray-400" 
-                placeholder="E.g. https://docs.google.com/" 
-                required />
-            <button 
-                type="submit" 
-                class="w-full text-white bg-blue-600 focus:ring-2 font-light rounded-lg text-sm px-5 py-3 text-center mt-5">
-                Create short url
-            </button>
-        </form>
-    </div>
+    <form class="w-full max-w-sm p-10 bg-white rounded-xl mx-auto mt-32 shadow-lg border" method="post" action="/">
+        <h5 class="text-2xl font-bold">Shopy</h5>
+        <label for="long_url" class="block mb-2 text-sm font-medium dark:text-white mt-5">Long URL</label>
+        <input 
+            type="text" 
+            name="long_url" class="border border-gray-300 text-sm rounded-lg block w-full px-5 p-3 placeholder:text-gray-400" 
+            placeholder="E.g. https://docs.google.com/" 
+            required />
+        <button 
+            type="submit" 
+            class="w-full text-white bg-blue-600 focus:ring-2 font-light rounded-lg text-sm px-5 py-3 text-center mt-5">
+            Create short url
+        </button>
+    </form>
     
     {% if short_url %}
         <p class="text-center mt-5">
@@ -33,9 +31,5 @@
             </a>
         </p>
     {% endif %}
-
-    <script>
-
-    </script>
 </body>
 </html>
